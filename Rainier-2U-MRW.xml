@@ -43792,7 +43792,7 @@
 <targetInstances>
 <targetInstance>
 	<id>sys-0</id>
-	<type>sys-sys-power10</type>
+	<type>sys-sys-power12</type>
 	<is_root>true</is_root>
 	<instance_name>sys</instance_name>
 	<position>0</position>
@@ -44998,7 +44998,7 @@
 	<attribute>
 		<id>EEPROM_VPD_PRIMARY_INFO</id>
 		<default>
-				<field><id>i2cMasterPath</id><value>physical:sys-0/node-0/proc-0</value></field>
+				<field><id>i2cMasterPath</id><value>physical:sys-0/node-0/hubchip-0</value></field>
 				<field><id>port</id><value>0</value></field>
 				<field><id>devAddr</id><value>0xA0</value></field>
 				<field><id>engine</id><value>2</value></field>
@@ -67982,7 +67982,7 @@
 </targetInstance>
 <targetInstance>
 	<id>power10-0</id>
-	<type>chip-processor-power10</type>
+	<type>chip-processor-power12</type>
 	<is_root>false</is_root>
 	<instance_name>power10</instance_name>
 	<position>0</position>
@@ -68101,7 +68101,7 @@
 	<hidden_child_id>cpu_func_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0</default>
 	</attribute>
 	<attribute>
 		<id>AVSBUS_BUSNUM</id>
@@ -68409,7 +68409,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0</default>
+		<default>physical:sys-0/node-0/hubchip-0</default>
 	</attribute>
 	<attribute>
 		<id>POSITION</id>
@@ -68518,7 +68518,7 @@
 </targetInstance>
 <targetInstance>
 	<id>eq0</id>
-	<type>unit-eq-power10</type>
+	<type>unit-eq-power12</type>
 	<is_root>false</is_root>
 	<instance_name>eq0</instance_name>
 	<position>-1</position>
@@ -68526,7 +68526,7 @@
 	<child_id>fc1</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -68558,7 +68558,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -68571,7 +68571,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc0</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc0</instance_name>
 	<position>-1</position>
@@ -68624,7 +68624,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core0</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core0</instance_name>
 	<position>-1</position>
@@ -68633,7 +68633,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-0</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -68665,7 +68665,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-0</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-0</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -68831,7 +68831,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core1</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core1</instance_name>
 	<position>-1</position>
@@ -68840,7 +68840,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-1</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-1</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -68872,7 +68872,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-1</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-1</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -68885,7 +68885,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc1</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc1</instance_name>
 	<position>-1</position>
@@ -68938,7 +68938,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core2</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core2</instance_name>
 	<position>-1</position>
@@ -68947,7 +68947,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-2</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-2</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -68979,7 +68979,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-2</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-2</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -68992,7 +68992,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core3</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core3</instance_name>
 	<position>-1</position>
@@ -69001,7 +69001,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-3</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-3</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69033,7 +69033,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-3</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-3</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69046,7 +69046,7 @@
 </targetInstance>
 <targetInstance>
 	<id>eq1</id>
-	<type>unit-eq-power10</type>
+	<type>unit-eq-power12</type>
 	<is_root>false</is_root>
 	<instance_name>eq1</instance_name>
 	<position>-1</position>
@@ -69054,7 +69054,7 @@
 	<child_id>fc3</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-1</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-1</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69086,7 +69086,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-1</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-1</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69099,7 +69099,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc2</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc2</instance_name>
 	<position>-1</position>
@@ -69152,7 +69152,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core4</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core4</instance_name>
 	<position>-1</position>
@@ -69161,7 +69161,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-4</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-4</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69193,7 +69193,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-4</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-4</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69206,7 +69206,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core5</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core5</instance_name>
 	<position>-1</position>
@@ -69215,7 +69215,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-5</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-5</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69247,7 +69247,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-5</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-5</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69260,7 +69260,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc3</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc3</instance_name>
 	<position>-1</position>
@@ -69313,7 +69313,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core6</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core6</instance_name>
 	<position>-1</position>
@@ -69322,7 +69322,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-6</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-6</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69354,7 +69354,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-6</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-6</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69367,7 +69367,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core7</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core7</instance_name>
 	<position>-1</position>
@@ -69376,7 +69376,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-7</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-7</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69408,7 +69408,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-7</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-7</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69421,7 +69421,7 @@
 </targetInstance>
 <targetInstance>
 	<id>eq2</id>
-	<type>unit-eq-power10</type>
+	<type>unit-eq-power12</type>
 	<is_root>false</is_root>
 	<instance_name>eq2</instance_name>
 	<position>-1</position>
@@ -69429,7 +69429,7 @@
 	<child_id>fc5</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-2</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-2</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69461,7 +69461,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-2</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-2</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69474,7 +69474,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc4</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc4</instance_name>
 	<position>-1</position>
@@ -69527,7 +69527,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core8</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core8</instance_name>
 	<position>-1</position>
@@ -69536,7 +69536,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-8</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-8</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69568,7 +69568,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-8</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-8</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69581,7 +69581,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core9</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core9</instance_name>
 	<position>-1</position>
@@ -69590,7 +69590,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-9</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-9</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69622,7 +69622,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-9</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-9</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69635,7 +69635,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc5</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc5</instance_name>
 	<position>-1</position>
@@ -69688,7 +69688,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core10</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core10</instance_name>
 	<position>-1</position>
@@ -69697,7 +69697,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-10</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-10</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69729,7 +69729,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-10</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-10</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69742,7 +69742,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core11</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core11</instance_name>
 	<position>-1</position>
@@ -69751,7 +69751,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-11</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-11</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69783,7 +69783,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-11</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-11</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69796,7 +69796,7 @@
 </targetInstance>
 <targetInstance>
 	<id>eq3</id>
-	<type>unit-eq-power10</type>
+	<type>unit-eq-power12</type>
 	<is_root>false</is_root>
 	<instance_name>eq3</instance_name>
 	<position>-1</position>
@@ -69804,7 +69804,7 @@
 	<child_id>fc7</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-3</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-3</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69836,7 +69836,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-3</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-3</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69849,7 +69849,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc6</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc6</instance_name>
 	<position>-1</position>
@@ -69902,7 +69902,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core12</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core12</instance_name>
 	<position>-1</position>
@@ -69911,7 +69911,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-12</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-12</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69943,7 +69943,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-12</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-12</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -69956,7 +69956,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core13</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core13</instance_name>
 	<position>-1</position>
@@ -69965,7 +69965,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-13</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-13</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -69997,7 +69997,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-13</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-13</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70010,7 +70010,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc7</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc7</instance_name>
 	<position>-1</position>
@@ -70063,7 +70063,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core14</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core14</instance_name>
 	<position>-1</position>
@@ -70072,7 +70072,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-14</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-14</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70104,7 +70104,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-14</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-14</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70117,7 +70117,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core15</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core15</instance_name>
 	<position>-1</position>
@@ -70126,7 +70126,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-15</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-15</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70158,7 +70158,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-15</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-15</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70171,7 +70171,7 @@
 </targetInstance>
 <targetInstance>
 	<id>eq4</id>
-	<type>unit-eq-power10</type>
+	<type>unit-eq-power12</type>
 	<is_root>false</is_root>
 	<instance_name>eq4</instance_name>
 	<position>-1</position>
@@ -70179,7 +70179,7 @@
 	<child_id>fc9</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-4</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-4</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70211,7 +70211,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-4</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-4</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70224,7 +70224,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc8</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc8</instance_name>
 	<position>-1</position>
@@ -70277,7 +70277,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core16</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core16</instance_name>
 	<position>-1</position>
@@ -70286,7 +70286,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-16</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-16</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70318,7 +70318,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-16</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-16</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70331,7 +70331,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core17</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core17</instance_name>
 	<position>-1</position>
@@ -70340,7 +70340,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-17</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-17</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70372,7 +70372,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-17</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-17</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70385,7 +70385,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc9</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc9</instance_name>
 	<position>-1</position>
@@ -70438,7 +70438,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core18</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core18</instance_name>
 	<position>-1</position>
@@ -70447,7 +70447,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-18</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-18</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70479,7 +70479,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-18</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-18</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70492,7 +70492,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core19</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core19</instance_name>
 	<position>-1</position>
@@ -70501,7 +70501,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-19</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-19</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70533,7 +70533,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-19</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-19</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70546,7 +70546,7 @@
 </targetInstance>
 <targetInstance>
 	<id>eq5</id>
-	<type>unit-eq-power10</type>
+	<type>unit-eq-power12</type>
 	<is_root>false</is_root>
 	<instance_name>eq5</instance_name>
 	<position>-1</position>
@@ -70554,7 +70554,7 @@
 	<child_id>fc11</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-5</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-5</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70586,7 +70586,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-5</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-5</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70599,7 +70599,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc10</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc10</instance_name>
 	<position>-1</position>
@@ -70652,7 +70652,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core20</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core20</instance_name>
 	<position>-1</position>
@@ -70661,7 +70661,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-20</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-20</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70693,7 +70693,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-20</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-20</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70706,7 +70706,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core21</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core21</instance_name>
 	<position>-1</position>
@@ -70715,7 +70715,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-21</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-21</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70747,7 +70747,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-21</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-21</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70760,7 +70760,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc11</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc11</instance_name>
 	<position>-1</position>
@@ -70813,7 +70813,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core22</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core22</instance_name>
 	<position>-1</position>
@@ -70822,7 +70822,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-22</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-22</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70854,7 +70854,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-22</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-22</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70867,7 +70867,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core23</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core23</instance_name>
 	<position>-1</position>
@@ -70876,7 +70876,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-23</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-23</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70908,7 +70908,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-23</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-23</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70921,7 +70921,7 @@
 </targetInstance>
 <targetInstance>
 	<id>eq6</id>
-	<type>unit-eq-power10</type>
+	<type>unit-eq-power12</type>
 	<is_root>false</is_root>
 	<instance_name>eq6</instance_name>
 	<position>-1</position>
@@ -70929,7 +70929,7 @@
 	<child_id>fc13</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-6</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-6</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -70961,7 +70961,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-6</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-6</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -70974,7 +70974,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc12</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc12</instance_name>
 	<position>-1</position>
@@ -71027,7 +71027,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core24</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core24</instance_name>
 	<position>-1</position>
@@ -71036,7 +71036,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-24</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-24</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -71068,7 +71068,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-24</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-24</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -71081,7 +71081,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core25</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core25</instance_name>
 	<position>-1</position>
@@ -71090,7 +71090,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-25</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-25</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -71122,7 +71122,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-25</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-25</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -71135,7 +71135,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc13</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc13</instance_name>
 	<position>-1</position>
@@ -71188,7 +71188,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core26</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core26</instance_name>
 	<position>-1</position>
@@ -71197,7 +71197,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-26</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-26</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -71229,7 +71229,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-26</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-26</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -71242,7 +71242,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core27</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core27</instance_name>
 	<position>-1</position>
@@ -71251,7 +71251,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-27</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-27</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -71283,7 +71283,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-27</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-27</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -71296,7 +71296,7 @@
 </targetInstance>
 <targetInstance>
 	<id>eq7</id>
-	<type>unit-eq-power10</type>
+	<type>unit-eq-power12</type>
 	<is_root>false</is_root>
 	<instance_name>eq7</instance_name>
 	<position>-1</position>
@@ -71304,7 +71304,7 @@
 	<child_id>fc15</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-7</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-7</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -71336,7 +71336,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-7</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-7</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -71349,7 +71349,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc14</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc14</instance_name>
 	<position>-1</position>
@@ -71402,7 +71402,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core28</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core28</instance_name>
 	<position>-1</position>
@@ -71411,7 +71411,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-28</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-28</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -71443,7 +71443,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-28</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-28</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -71456,7 +71456,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core29</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core29</instance_name>
 	<position>-1</position>
@@ -71465,7 +71465,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-29</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-29</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -71497,7 +71497,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-29</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-29</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -71510,7 +71510,7 @@
 </targetInstance>
 <targetInstance>
 	<id>fc15</id>
-	<type>unit-fc-power10</type>
+	<type>unit-fc-power12</type>
 	<is_root>false</is_root>
 	<instance_name>fc15</instance_name>
 	<position>-1</position>
@@ -71563,7 +71563,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core30</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core30</instance_name>
 	<position>-1</position>
@@ -71572,7 +71572,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-30</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-30</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -71604,7 +71604,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-30</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-30</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -71617,7 +71617,7 @@
 </targetInstance>
 <targetInstance>
 	<id>core31</id>
-	<type>unit-core-power10</type>
+	<type>unit-core-power12</type>
 	<is_root>false</is_root>
 	<instance_name>core31</instance_name>
 	<position>-1</position>
@@ -71626,7 +71626,7 @@
 	<hidden_child_id>cpucore_freq_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/eq-0/core-31</default>
+		<default>affinity:sys-0/node-0/hubchip-0/eq-0/core-31</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -71658,7 +71658,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/eq-0/core-31</default>
+		<default>physical:sys-0/node-0/hubchip-0/eq-0/core-31</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -71796,7 +71796,7 @@
 	<child_id>mi0</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-0</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -71832,7 +71832,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-0</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-0</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -72049,7 +72049,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-0/omi-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-0/omi-0</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -72113,7 +72113,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-0/omi-0</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-0/omi-0</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -72132,7 +72132,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-0/omi-1</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-0/omi-1</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -72196,7 +72196,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-0/omi-1</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-0/omi-1</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -72360,7 +72360,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-0/omi-2</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-0/omi-2</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -72424,7 +72424,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-0/omi-2</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-0/omi-2</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -72443,7 +72443,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-0/omi-3</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-0/omi-3</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -72507,7 +72507,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-0/omi-3</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-0/omi-3</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -72527,7 +72527,7 @@
 	<child_id>mi1</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-1</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-1</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -72563,7 +72563,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-1</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-1</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -72780,7 +72780,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-1/omi-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-1/omi-0</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -72844,7 +72844,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-1/omi-0</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-1/omi-0</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -72863,7 +72863,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-1/omi-1</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-1/omi-1</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -72927,7 +72927,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-1/omi-1</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-1/omi-1</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -73091,7 +73091,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-1/omi-2</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-1/omi-2</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -73155,7 +73155,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-1/omi-2</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-1/omi-2</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -73174,7 +73174,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-1/omi-3</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-1/omi-3</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -73238,7 +73238,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-1/omi-3</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-1/omi-3</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -73258,7 +73258,7 @@
 	<child_id>mi2</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-2</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-2</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -73294,7 +73294,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-2</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-2</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -73511,7 +73511,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-2/omi-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-2/omi-0</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -73575,7 +73575,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-2/omi-0</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-2/omi-0</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -73594,7 +73594,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-2/omi-1</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-2/omi-1</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -73658,7 +73658,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-2/omi-1</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-2/omi-1</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -73822,7 +73822,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-2/omi-2</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-2/omi-2</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -73886,7 +73886,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-2/omi-2</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-2/omi-2</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -73905,7 +73905,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-2/omi-3</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-2/omi-3</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -73969,7 +73969,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-2/omi-3</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-2/omi-3</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -73989,7 +73989,7 @@
 	<child_id>mi3</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-3</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-3</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -74025,7 +74025,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-3</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-3</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -74242,7 +74242,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-3/omi-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-3/omi-0</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -74306,7 +74306,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-3/omi-0</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-3/omi-0</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -74325,7 +74325,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-3/omi-1</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-3/omi-1</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -74389,7 +74389,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-3/omi-1</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-3/omi-1</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -74553,7 +74553,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-3/omi-2</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-3/omi-2</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -74617,7 +74617,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-3/omi-2</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-3/omi-2</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -74636,7 +74636,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/mc-3/omi-3</default>
+		<default>affinity:sys-0/node-0/hubchip-0/mc-3/omi-3</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -74700,7 +74700,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/mc-3/omi-3</default>
+		<default>physical:sys-0/node-0/hubchip-0/mc-3/omi-3</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -74722,7 +74722,7 @@
 	<child_id>pec0_x8_x4_x4_config</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/pec-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0/pec-0</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -74754,7 +74754,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/pec-0</default>
+		<default>physical:sys-0/node-0/hubchip-0/pec-0</default>
 	</attribute>
 	<attribute>
 		<id>PROC_PCIE_LANE_REVERSAL</id>
@@ -74842,7 +74842,7 @@
 	<child_id>phb0_x16_bus</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/phb-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0/phb-0</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -74878,7 +74878,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/phb-0</default>
+		<default>physical:sys-0/node-0/hubchip-0/phb-0</default>
 	</attribute>
 	<attribute>
 		<id>PROC_PCIE_BAR_ENABLE</id>
@@ -75090,7 +75090,7 @@
 	<child_id>phb0_x8_bus</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/phb-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0/phb-0</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -75126,7 +75126,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/phb-0</default>
+		<default>physical:sys-0/node-0/hubchip-0/phb-0</default>
 	</attribute>
 	<attribute>
 		<id>PROC_PCIE_BAR_ENABLE</id>
@@ -75285,7 +75285,7 @@
 	<child_id>phb1_x8_bus</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/phb-1</default>
+		<default>affinity:sys-0/node-0/hubchip-0/phb-1</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -75321,7 +75321,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/phb-1</default>
+		<default>physical:sys-0/node-0/hubchip-0/phb-1</default>
 	</attribute>
 	<attribute>
 		<id>PROC_PCIE_BAR_ENABLE</id>
@@ -75534,7 +75534,7 @@
 	<child_id>phb1_x4_bus</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/phb-1</default>
+		<default>affinity:sys-0/node-0/hubchip-0/phb-1</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -75570,7 +75570,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/phb-1</default>
+		<default>physical:sys-0/node-0/hubchip-0/phb-1</default>
 	</attribute>
 	<attribute>
 		<id>PROC_PCIE_BAR_ENABLE</id>
@@ -75729,7 +75729,7 @@
 	<child_id>phb2_x4_bus</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/phb-2</default>
+		<default>affinity:sys-0/node-0/hubchip-0/phb-2</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -75765,7 +75765,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/phb-2</default>
+		<default>physical:sys-0/node-0/hubchip-0/phb-2</default>
 	</attribute>
 	<attribute>
 		<id>PROC_PCIE_BAR_ENABLE</id>
@@ -75926,7 +75926,7 @@
 	<child_id>pec1_x8_x4_x4_config</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/pec-1</default>
+		<default>affinity:sys-0/node-0/hubchip-0/pec-1</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -75958,7 +75958,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/pec-1</default>
+		<default>physical:sys-0/node-0/hubchip-0/pec-1</default>
 	</attribute>
 	<attribute>
 		<id>PROC_PCIE_LANE_REVERSAL</id>
@@ -76046,7 +76046,7 @@
 	<child_id>phb3_x16_bus</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/phb-3</default>
+		<default>affinity:sys-0/node-0/hubchip-0/phb-3</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -76082,7 +76082,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/phb-3</default>
+		<default>physical:sys-0/node-0/hubchip-0/phb-3</default>
 	</attribute>
 	<attribute>
 		<id>PROC_PCIE_BAR_ENABLE</id>
@@ -76294,7 +76294,7 @@
 	<child_id>phb3_x8_bus</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/phb-3</default>
+		<default>affinity:sys-0/node-0/hubchip-0/phb-3</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -76330,7 +76330,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/phb-3</default>
+		<default>physical:sys-0/node-0/hubchip-0/phb-3</default>
 	</attribute>
 	<attribute>
 		<id>PROC_PCIE_BAR_ENABLE</id>
@@ -76489,7 +76489,7 @@
 	<child_id>phb4_x8_bus</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/phb-4</default>
+		<default>affinity:sys-0/node-0/hubchip-0/phb-4</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -76525,7 +76525,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/phb-4</default>
+		<default>physical:sys-0/node-0/hubchip-0/phb-4</default>
 	</attribute>
 	<attribute>
 		<id>PROC_PCIE_BAR_ENABLE</id>
@@ -76738,7 +76738,7 @@
 	<child_id>phb4_x4_bus</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/phb-4</default>
+		<default>affinity:sys-0/node-0/hubchip-0/phb-4</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -76774,7 +76774,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/phb-4</default>
+		<default>physical:sys-0/node-0/hubchip-0/phb-4</default>
 	</attribute>
 	<attribute>
 		<id>PROC_PCIE_BAR_ENABLE</id>
@@ -76933,7 +76933,7 @@
 	<child_id>phb5_x4_bus</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/phb-5</default>
+		<default>affinity:sys-0/node-0/hubchip-0/phb-5</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -76969,7 +76969,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/phb-5</default>
+		<default>physical:sys-0/node-0/hubchip-0/phb-5</default>
 	</attribute>
 	<attribute>
 		<id>PROC_PCIE_BAR_ENABLE</id>
@@ -77183,7 +77183,7 @@
 	<child_id>abus0</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/iohs-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0/iohs-0</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -77267,7 +77267,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/iohs-0</default>
+		<default>physical:sys-0/node-0/hubchip-0/iohs-0</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -77598,7 +77598,7 @@
 	<child_id>xbus1</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/iohs-1</default>
+		<default>affinity:sys-0/node-0/hubchip-0/iohs-1</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -77682,7 +77682,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/iohs-1</default>
+		<default>physical:sys-0/node-0/hubchip-0/iohs-1</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -77807,7 +77807,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/pau-0</default>
+		<default>affinity:sys-0/node-0/hubchip-0/pau-0</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -77839,7 +77839,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/pau-0</default>
+		<default>physical:sys-0/node-0/hubchip-0/pau-0</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -77914,7 +77914,7 @@
 	<child_id>xbus2</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/iohs-2</default>
+		<default>affinity:sys-0/node-0/hubchip-0/iohs-2</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -77998,7 +77998,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/iohs-2</default>
+		<default>physical:sys-0/node-0/hubchip-0/iohs-2</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -78125,7 +78125,7 @@
 	<child_id>abus3</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/iohs-3</default>
+		<default>affinity:sys-0/node-0/hubchip-0/iohs-3</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -78209,7 +78209,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/iohs-3</default>
+		<default>physical:sys-0/node-0/hubchip-0/iohs-3</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -78334,7 +78334,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/pau-3</default>
+		<default>affinity:sys-0/node-0/hubchip-0/pau-3</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -78366,7 +78366,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/pau-3</default>
+		<default>physical:sys-0/node-0/hubchip-0/pau-3</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -78442,7 +78442,7 @@
 	<child_id>abus4</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/iohs-4</default>
+		<default>affinity:sys-0/node-0/hubchip-0/iohs-4</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -78526,7 +78526,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/iohs-4</default>
+		<default>physical:sys-0/node-0/hubchip-0/iohs-4</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -78653,7 +78653,7 @@
 	<child_id>abus5</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/iohs-5</default>
+		<default>affinity:sys-0/node-0/hubchip-0/iohs-5</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -78737,7 +78737,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/iohs-5</default>
+		<default>physical:sys-0/node-0/hubchip-0/iohs-5</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -78862,7 +78862,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/pau-4</default>
+		<default>affinity:sys-0/node-0/hubchip-0/pau-4</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -78894,7 +78894,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/pau-4</default>
+		<default>physical:sys-0/node-0/hubchip-0/pau-4</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -78913,7 +78913,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/pau-5</default>
+		<default>affinity:sys-0/node-0/hubchip-0/pau-5</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -78945,7 +78945,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/pau-5</default>
+		<default>physical:sys-0/node-0/hubchip-0/pau-5</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -79021,7 +79021,7 @@
 	<child_id>abus6</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/iohs-6</default>
+		<default>affinity:sys-0/node-0/hubchip-0/iohs-6</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -79105,7 +79105,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/iohs-6</default>
+		<default>physical:sys-0/node-0/hubchip-0/iohs-6</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -79232,7 +79232,7 @@
 	<child_id>abus7</child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/iohs-7</default>
+		<default>affinity:sys-0/node-0/hubchip-0/iohs-7</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -79316,7 +79316,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/iohs-7</default>
+		<default>physical:sys-0/node-0/hubchip-0/iohs-7</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -79441,7 +79441,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/pau-6</default>
+		<default>affinity:sys-0/node-0/hubchip-0/pau-6</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -79473,7 +79473,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/pau-6</default>
+		<default>physical:sys-0/node-0/hubchip-0/pau-6</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -79492,7 +79492,7 @@
 	<position>-1</position>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-0/pau-7</default>
+		<default>affinity:sys-0/node-0/hubchip-0/pau-7</default>
 	</attribute>
 	<attribute>
 		<id>BUS_TYPE</id>
@@ -79524,7 +79524,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-0/pau-7</default>
+		<default>physical:sys-0/node-0/hubchip-0/pau-7</default>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -79537,7 +79537,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv1</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv1</instance_name>
 	<position>-1</position>
@@ -79588,7 +79588,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv2</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv2</instance_name>
 	<position>-1</position>
@@ -79639,7 +79639,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv3</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv3</instance_name>
 	<position>-1</position>
@@ -79690,7 +79690,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv8</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv8</instance_name>
 	<position>-1</position>
@@ -79741,7 +79741,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv9</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv9</instance_name>
 	<position>-1</position>
@@ -79792,7 +79792,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv12</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv12</instance_name>
 	<position>-1</position>
@@ -79843,7 +79843,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv13</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv13</instance_name>
 	<position>-1</position>
@@ -79894,7 +79894,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv14</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv14</instance_name>
 	<position>-1</position>
@@ -79945,7 +79945,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv15</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv15</instance_name>
 	<position>-1</position>
@@ -79996,7 +79996,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv16</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv16</instance_name>
 	<position>-1</position>
@@ -80047,7 +80047,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv17</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv17</instance_name>
 	<position>-1</position>
@@ -80098,7 +80098,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv18</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv18</instance_name>
 	<position>-1</position>
@@ -80149,7 +80149,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv19</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv19</instance_name>
 	<position>-1</position>
@@ -80200,7 +80200,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv24</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv24</instance_name>
 	<position>-1</position>
@@ -80251,7 +80251,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv25</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv25</instance_name>
 	<position>-1</position>
@@ -80302,7 +80302,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv26</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv26</instance_name>
 	<position>-1</position>
@@ -80353,7 +80353,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv27</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv27</instance_name>
 	<position>-1</position>
@@ -80404,7 +80404,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv28</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv28</instance_name>
 	<position>-1</position>
@@ -80455,7 +80455,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv29</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv29</instance_name>
 	<position>-1</position>
@@ -80506,7 +80506,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv30</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv30</instance_name>
 	<position>-1</position>
@@ -80557,7 +80557,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv31</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv31</instance_name>
 	<position>-1</position>
@@ -80608,7 +80608,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv32</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv32</instance_name>
 	<position>-1</position>
@@ -80659,7 +80659,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv33</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv33</instance_name>
 	<position>-1</position>
@@ -80710,7 +80710,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv34</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv34</instance_name>
 	<position>-1</position>
@@ -80761,7 +80761,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv35</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv35</instance_name>
 	<position>-1</position>
@@ -80812,7 +80812,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv36</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv36</instance_name>
 	<position>-1</position>
@@ -80863,7 +80863,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv37</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv37</instance_name>
 	<position>-1</position>
@@ -80914,7 +80914,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv38</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv38</instance_name>
 	<position>-1</position>
@@ -80965,7 +80965,7 @@
 </targetInstance>
 <targetInstance>
 	<id>perv39</id>
-	<type>unit-perv-power10</type>
+	<type>unit-perv-power12</type>
 	<is_root>false</is_root>
 	<instance_name>perv39</instance_name>
 	<position>-1</position>
@@ -84119,7 +84119,7 @@
 </targetInstance>
 <targetInstance>
 	<id>power10-1</id>
-	<type>chip-processor-power10</type>
+	<type>chip-processor-power12</type>
 	<is_root>false</is_root>
 	<instance_name>power10</instance_name>
 	<position>1</position>
@@ -84236,7 +84236,7 @@
 	<hidden_child_id>cpu_func_sensor</hidden_child_id>
 	<attribute>
 		<id>AFFINITY_PATH</id>
-		<default>affinity:sys-0/node-0/proc-1</default>
+		<default>affinity:sys-0/node-0/hubchip-1</default>
 	</attribute>
 	<attribute>
 		<id>AVSBUS_BUSNUM</id>
@@ -84544,7 +84544,7 @@
 	</attribute>
 	<attribute>
 		<id>PHYS_PATH</id>
-		<default>physical:sys-0/node-0/proc-1</default>
+		<default>physical:sys-0/node-0/hubchip-1</default>
 	</attribute>
 	<attribute>
 		<id>POSITION</id>
